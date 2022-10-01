@@ -543,12 +543,29 @@
           </div>
         </div>
       </div>
-      <div class="row evenly">
-        <div class="col-lg-5">
+      <div class="row">
+        <div class="col-md-6">
+            <div class="accordian-wraper">
+              <div class="accordian-head">
+                <p>01. How to chose a digital Marketing Agency</p>
+                <span>+</span>
+              </div>
+              <div class="accordian-body">
+               <p>Digital marketing is what we at Absolute Digital Media live and breathe. The world is digital, and our
+                digital marketing covers all online marketing agency services available. Digital marketing channels are
+                inclusive of all online marketing services, such as search engines, social media, affiliate websites, and
+                so
+                much more. Digital marketing agencies in London and alsewhere enable your brand to increase their online
+                visibility, targeting the audience that is tailor specific to you and your business, while boosting your
+                search authority and getting you recognition.</p> 
+              </div>
+            </div>
+        </div>
+        <!-- <div class="col-lg-5">
           <div class="back">
             <div class="chose">
               <p class="pn">01. How to chose a digital Marketing Agency</p>
-              <p class="btn show" target="1" value="SHOW">+</p>
+              <p class="show" target="1" value="SHOW">+</p>
             </div>
             <div class="breathe">
               Digital marketing is what we at Absolute Digital Media live and breathe. The world is digital, and our
@@ -645,7 +662,7 @@
               search authority and getting you recognition.
             </div>
           </div>
-        </div>
+        </div> -->
         <!-- <div class="col-lg-6">
         <div class="accordion" id="accordionExample">
           <div class="accordion-item">
@@ -688,7 +705,7 @@
           </div>
         </div>
         <div class="col-lg-6">
-          <div class="fill mt-5 mb-3">
+          <div class="fill  mb-3">
             <h2>Fill The Form Below</h2>
           </div>
           <form action="" enctype="multipart/form-data" method="post">
@@ -759,7 +776,7 @@
             </div>
             <div>
               <p class="lorem">It’s no secret that the TikTok app has grown in popularity over the past couple of years.
-                In fact, since 2017 the number of users  to 3.9 million
+                In fact, since 2017 the  to 3.9 million
                 Spotify announced its “working from anywhere” policy</p>
             </div>
             <div class="more d-flex">
@@ -941,24 +958,24 @@
   <script>
 
 
-    var acc = document.getElementsByClassName("chose");
-    var i;
+    // var acc = document.getElementsByClassName("chose");
+    // var i;
 
-    for (i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function () {
-        /* Toggle between adding and removing the "active" class,
-        to highlight the button that controls the panel */
-        this.classList.toggle("active");
+    // for (i = 0; i < acc.length; i++) {
+    //   acc[i].addEventListener("click", function () {
+    //     /* Toggle between adding and removing the "active" class,
+    //     to highlight the button that controls the panel */
+    //     this.classList.toggle("active");
 
-        /* Toggle between hiding and showing the active panel */
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-          panel.style.display = "none";
-        } else {
-          panel.style.display = "block";
-        }
-      });
-    }
+    //     /* Toggle between hiding and showing the active panel */
+    //     var panel = this.nextElementSibling;
+    //     if (panel.style.display === "block") {
+    //       panel.style.display = "none";
+    //     } else {
+    //       panel.style.display = "block";
+    //     }
+    //   });
+    // }
 
 // $(document).ready(function(){
 //   $(".breathe").hide();
@@ -974,6 +991,14 @@
 //     }
 //   })
 // })
+
+$(document).ready(function(){
+  $(".accordian-head").on("click",function(){
+    var $this = $(this);
+    this.toggleClass("show");
+    this.siblings("accordian-body").slideToggle(400);
+  })
+})
   </script>
 
 </body>
