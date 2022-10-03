@@ -68,7 +68,7 @@ textarea:focus, input:focus{
     font-size: 40px;
   }
   .collapse .navbar-collapse{
-    padding-top: 8px !important;
+    margin-top: 12px !important;
     align-items: center !important;
 
   }
@@ -144,7 +144,7 @@ textarea:focus, input:focus{
   .get a{
       color: var(--white);
       border: 1px solid var(--pink);
-      padding: 15px 50px;
+      padding: 17px 70px;
       font-size: 20px;
       border-radius: 30px;
       margin-top: 50px;
@@ -252,7 +252,7 @@ textarea:focus, input:focus{
   .read a{
     color: var(--white);
     background-color: var(--pink);
-    padding: 15px 50px;
+    padding: 17px 60px;
     border-radius: 30px;
     margin-top: 30px;
   }
@@ -266,6 +266,9 @@ textarea:focus, input:focus{
 .quid img{
   padding-top: 30px;
   width: 190px;
+}
+.croco{
+  margin-top: -15px;
 }
 /* -----------service-------- */
 .service{
@@ -367,7 +370,7 @@ textarea:focus, input:focus{
 .let a{
   color: var(--white);
   font-size: 20px;
-  padding: 20px 40px;
+  padding: 20px 50px;
   border-radius: 35px;
   border: 1px solid var(--pink);
 
@@ -434,7 +437,7 @@ textarea:focus, input:focus{
   border-radius: 100px;
   position: absolute;
   top: -10px;
-  left: -5px;
+  left: -6px;
 }
 .cut::after{
   content: url(../images/client-icon3.png);
@@ -563,7 +566,7 @@ background-color: var(--black);
 .case a{
   font-size: 20px;
   color: var(--white);
-  padding: 20px 50px;
+  padding: 22px 45px;
   background-color: var(--pink);
   text-align: center;
   border-radius: 40px;
@@ -576,14 +579,14 @@ background-color: var(--black);
   background-size: cover;
   background-position: center;
   position: relative;
-  margin-top: 200px;
+  margin-top: 140px;
   margin-bottom: 50px;
 }
 .dolar{
   text-align: center;
 }
 .tangible{
-  margin-top: 100px;
+  margin-top: 30px;
 }
 .dolar h1{
   color: var(--white);
@@ -627,7 +630,7 @@ background-color: var(--black);
 .contact a{
   color: var(--white);
   background-color: var(--pink);
-  padding: 20px 70px;
+  padding: 20px 75px;
   border-radius: 45px;
 }
 .special::after{
@@ -662,7 +665,7 @@ background-color: var(--black);
 .view-awards a{
   color: var(--white);
   background-color: var(--pink);
-  padding: 20px 70px;
+  padding: 22px 60px;
   border-radius: 50px;
   font-size: 18px;
 }
@@ -702,7 +705,7 @@ background-color: var(--black);
   font-size: 18px;
   border: 1px solid var(--pink);
   border-radius: 30px;
-  padding: 15px 40px;
+  padding: 15px 45px;
 }
 .info span{
   color: var(--pink);
@@ -1059,8 +1062,8 @@ width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 70px;
+  padding-bottom: 72px;
 }
 .industry h1{
   color: var(--white);
@@ -1105,7 +1108,7 @@ width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding-top: 80px;
+  padding-top: 70px;
   padding-bottom: 100px;
  }
  .follow img{
@@ -1152,7 +1155,7 @@ font-weight: 800;
   color: var(--white);
 }
 .icons .fa-facebook-f{
-   padding: 14px 18px;
+   padding: 12px 15px;
 }
 .nav h2{
   color: var(--white);
@@ -1181,6 +1184,9 @@ font-weight: 800;
   font-weight: 600;
   position: relative;
   margin-top: 25px;
+}
+.list3 a li:hover{
+  color: var(--pink);
 }
 .list a li:hover{
   color: var(--pink) !important;
@@ -1225,6 +1231,7 @@ font-weight: 800;
   color: var(--pink);
   font-size: 24px;
   padding-right: 10px;
+  margin-top: 5px;
 }
 .after{
   border-bottom: 1px solid #333333;
@@ -1254,6 +1261,9 @@ font-weight: 800;
   }
 }
 @media(max-width:1366px){
+  /* .service-card{
+    margin-top: -3px;
+  } */
   .form textarea{
   width: 94%;
   }
@@ -1268,6 +1278,7 @@ font-weight: 800;
   }
 }
 @media(max-width:1300px){
+ 
   .service-card,.service-card-right,.service-card-l{
     border-right: none;
     border-bottom: none;
@@ -1428,6 +1439,9 @@ font-weight: 800;
 .list3{
   margin-left: -20px;
   padding-top: 10px;
+}
+.list3 li:hover{
+   color: var(--pink);
 }
 .nav1 h2{
   margin-left: 10px;
