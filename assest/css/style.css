@@ -59,6 +59,9 @@ textarea:focus, input:focus{
 .offcanvas-body ul li a{
   color: var(--white);
 }
+.offcanvas-body .navbar-nav .nav-item{
+  color: var(--white) !important;
+ }
   .offcanvas-title{
     color: var(--pink);
     
@@ -81,20 +84,25 @@ textarea:focus, input:focus{
 
   .cell
   {
-    padding: 5px 10px;
-    font-size: 20px;
-    border-radius: 60px;
+    padding: 10px 12px;
+    font-size: 16px;
+    border-radius: 85px;
     margin-right: 20px;
     text-align: center;
     background-color: var(--black);
 
   }
   .cell i{
-       font-size: 14px;
+       font-size: 16px;
+       color: var(--white);
+       transform: rotate(-45deg);
+       color: #fff;
+       margin-top: -12px
   }
   .call{
     margin-top: 5px;
   }
+   
   /* ------------Hero section------ */
   .hero{
     background-image: url('../images/hero.png');
@@ -734,65 +742,44 @@ width: 100%;
   
  
 }
-.active{
-  background-color: #000000;
-  color: var(--pink);
-  border-bottom: 1px solid #808080;
-}
-.active .pn{
-  color: var(--pink);
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-bottom: 10px;
-  
-}
- .active .show{
-  margin-top: 20px;
-  color: var(--white);
-  border: 2px solid #fff;
-}
-.pn,.show{
-  padding: 0px;
-  margin: 0px;
-}
+
 
 
 /* --------------Frequently Asked question------------ */
-
-.accordion-button:focus {
-  box-shadow: none;
-  border-color: rgba(0,0,0,.125);
+.accordian-wraper{
+  margin-top: 30px;
 }
-.accordion-button{
+.title{
   font-size: 20px;
-  border-bottom: 1px solid #333333 !important;
+  font-weight: 500px;
 }
-.accordion-body{
+.active.acccordian-body{
+  display: block;
+  background-color: var(--black);
   color: var(--white);
-  background-color: #000000;
-  
+  transition: max-height 5s ease-out;
+
 }
-.accordion-button:not(.collapsed){
-  color: var(--pink);
-  background-color: #000000;
-  
+.accordian-head{
+  position: relative;
+}
+.accordian-head::after{
+  content: '+';
+  position: absolute;
+  right: 16px;
+  font-size: 32px;
+  top: -5px;
+
 }
 
-.accordion-button.collapsed::after {
-  font-family: 'FontAwesome' !important;
-  content: '+'!important;
-  background-image: none !important;
-}
-.accordion-button:not(.collapsed)::after {
-  font-family: 'FontAwesome' !important;
-  content: '-'!important;
-  background-image: none !important;
+.opened::after{
+  content: '-';
+  position: absolute;
+  font-size: 45px;
+  top: -1px;
+  right: 27px;
   color: var(--white);
-  margin-top: 20px;
-  width: 20px !important;
 }
-
-
 .asked{
   margin: 50px 0px;
 }
@@ -805,57 +792,47 @@ width: 100%;
   font-weight: 800;
   
 }
+.opened{
+  background-color: var(--black);
+  padding: 15px 10px 0px 20px;
+  border-bottom: 1px solid #808080;
+  transition: height 5s ease;
+}
+.opened .title{
+  color: var(--pink);
+}
+.opened .togle{
+  color: var(--white);
+  border: 1px solid #808080;
+  border-bottom: none;
+
+}
 .accordian-head{
   justify-content: space-between;
   display: flex;
   border-bottom: 1px solid;
   margin-bottom: 0px;
+  cursor: pointer;
 }
 
 
 .accordian-head span{
   border: 1px solid #000;
-  height: 43px;
-  width: 45px;
+  height: 50px;
+  width: 50px;
   border-bottom: none;
   text-align: center;
+  font-size: 24px;
 }
-.accordian-body p{
-  padding-top: 30px;
-  padding-left: 20px;
+.accordian-body {
+  padding: 20px 20px;
   color: var(--white);
+  background-color: var(--black);
   display: none;
 }
 .evenly{
   justify-content: space-evenly;
-  padding-top: 50px;
-}
-.chose{
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid var(--black);
   margin-top: 40px;
-}
-.chose p{
-  color: var(--black);
-  font-size: 20px;
-  font-weight: 500;
-}
-.chose .show{
-  font-size: 20px;
-  height: 45px;
-  width: 45px;
-  padding-top: 5px;
-  border: 1px solid var(--black);
-}
-.show:hover{
-  border: 1px solid var(--black) !important;
-}
-.breathe{
-  padding:20px;
-  background-color: #000000;
-  display: none;
-  color: var(--white);
 }
 /* --------------marketer--------- */
 .marketer{
@@ -1291,9 +1268,6 @@ font-weight: 800;
   }
 }
 @media(max-width:1300px){
-  /* .call{
-    display: none;
-  } */
   .service-card,.service-card-right,.service-card-l{
     border-right: none;
     border-bottom: none;
@@ -1304,7 +1278,16 @@ font-weight: 800;
   .below{
     margin-top: 50px;
   }
-
+.title{
+  font-size: 14px;
+  margin-top: 10px;
+}
+.opened{
+  font-size: 14px;
+}
+.accordian-body{
+  font-size: 14px;
+}
 .form input{
   width: 90%;
 }
@@ -1635,6 +1618,23 @@ font-weight: 800;
   .ladbrokes h2{
     font-size: 40px;
   }
+  .title{
+    font-size: 12px;
+  }
+  .accordian-head span{
+    height: 47px;
+    width: 40px;
+  }
+  .accordian-head::after{
+    font-size: 20px;
+    top: 5px;
+  }
+  .opened::after{
+    top: 15px;
+  }
+  .accordian-body{
+    font-size: 12px;
+  }
 
   .case a{
     padding: 15px 30px;
@@ -1673,6 +1673,12 @@ font-weight: 800;
   .icons i{
     font-size: 12px;
     margin-right: 3px;
+  }
+  .title{
+    font-size: 10px
+  }
+  .accordian-body{
+    font-size: 10px;
   }
   .icons .fa-facebook-f{
        font-size: 12px;
