@@ -264,7 +264,7 @@ textarea:focus, input:focus{
   padding: 30px 0px;
 }
 .quid img{
-  padding-top: 30px;
+  padding-top: 40px;
   width: 190px;
 }
 .croco{
@@ -1268,7 +1268,7 @@ font-weight: 800;
     margin-top: -3px;
   } */
   .form textarea{
-  width: 92%;
+  width: 93%;
   }
   .size{
     margin-top: 200px;
@@ -1460,27 +1460,35 @@ font-weight: 800;
 }
 @media(max-width:769px){
   .contents h4{
-    font-size: 60px;
+    font-size: 50px;
   }
   
   .contents h1{
-    font-size: 60px;
+    font-size: 50px;
   }
   .contents h3{
 
-    font-size: 50px;
+    font-size: 40px;
+  }
+  .get a{
+    padding: 12px 32px;
+  }
+  .offcanvas-title img{
+    width: 150px;
   }
   .counters{
     border: none;
     text-align: center;
+    padding-left: 0px;
   }
   .counters-1{
     text-align: center;
     border: none;
+    padding-left: 0px;
   }
   .last{
     text-align: center;
-    padding-left: 20px;
+    padding-left: 0px;
   }
   .contents{
     text-align: center;
@@ -1505,6 +1513,9 @@ font-weight: 800;
   }
   .service::after{
     display: none;
+  }
+  .contact a{
+    padding: 15px 30px;
   }
   .img{
     margin-right: -25px;
@@ -1563,6 +1574,9 @@ font-weight: 800;
   .question h1{
     font-size: 35px;
   }
+  .our a{
+    padding: 15px 35px;
+  }
   .success h1{
     font-size: 30px;
   }
@@ -1608,6 +1622,16 @@ font-weight: 800;
   }
   .follow img{
     width: 200px;
+  }
+  .bit-form{
+    margin: 10px 10px;
+  }
+  .bit-form input{
+    width: 135%;
+  }
+  .bit-form a{
+          margin-left: auto;
+          padding: 10px 45px;
   }
   
 }
